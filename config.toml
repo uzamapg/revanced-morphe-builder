@@ -15,31 +15,6 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "arm64-v8a"
 build-mode = "both"
 
-# ReVanced Extended by anddea
-#[YouTube-anddea]
-#app-name = "YouTube"
-#archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-#apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-#uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-#patches-source = "anddea/revanced-patches"
-#cli-source = "MorpheApp/morphe-cli"
-#rv-brand = "ReVanced anddea"
-#build-mode = "both"
-#excluded-patches = "'Custom Shorts action buttons' 'Force player buttons background'"
-#patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
-
-#[YT-Music-anddea]
-#app-name = "YT Music"
-#archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-#apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-#patches-source = "anddea/revanced-patches"
-#cli-source = "MorpheApp/morphe-cli"
-#rv-brand = "ReVanced anddea"
-#arch = "arm64-v8a"
-#build-mode = "both"
-#included-patches = "'Disable music video in album' 'Hide player overlay filter'"
-#patcher-args = "-e 'Dark theme' -OdarkThemeBackgroundColor=@android:color/black"
-
 # Morphe
 [YouTube-Morphe]
 app-name = "YouTube"
@@ -63,354 +38,6 @@ rv-brand = "Morphe"
 arch = "arm64-v8a"
 build-mode = "both"
 
-[Reddit-arsclib]
-app-name = "Reddit"
-patches-source = "inotia00/revanced-patches-arsclib"
-patches-version = "v2.185.1"
-rv-brand = "Arsclib"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.reddit.frontpage
-
-[Bilibili-biliroamingm]
-app-name = "Bilibili"
-patches-source = "sakarie9/BiliRoamingM"
-patches-version = "v1.23.3.8"
-rv-brand = "Biliroamingm"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/bilibili/bilibili"
-build-mode = "apk"
-# Packages: com.bilibili.app.in, tv.danmaku.bili, tv.danmaku.bilibilihd
-
-[YouTube-d4n3436]
-app-name = "YouTube"
-patches-source = "d4n3436/revanced-patches-android5"
-patches-version = "v2.161.5"
-rv-brand = "D4n3436"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-build-mode = "apk"
-# Packages: com.google.android.youtube
-
-[Twitter-twitter]
-app-name = "Twitter"
-patches-source = "IndusAryan/twitter-patches"
-patches-version = "v1.14.0"
-rv-brand = "Twitter"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/x"
-build-mode = "apk"
-# Packages: com.twitter.android
-
-
-[Digitales Amt-1fexd]
-app-name = "Digitales Amt"
-patches-source = "1fexd/revanced-patches"
-patches-version = "v1.1.0"
-rv-brand = "1fexd"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/bundesministerium-fur-digitalisierung-und-wirtschaftsstandort/digitales-amt"
-build-mode = "apk"
-# Packages: at.gv.oe.app
-
-[Reddit-adobo]
-app-name = "Reddit"
-patches-source = "jkennethcarino/adobo"
-patches-version = "v1.1.0-dev.1"
-rv-brand = "Adobo"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.google.android.inputmethod.latin, com.reddit.frontpage
-
-[F1TV-alexvbp]
-app-name = "F1TV"
-patches-source = "Alexvbp/f1tv-patches"
-patches-version = "v1.0.5"
-rv-brand = "Alexvbp"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/formula-one-digital-media-limited/f1-tv"
-build-mode = "apk"
-# Packages: com.formulaone.production
-
-[PokeCardex-almewty]
-app-name = "PokeCardex"
-patches-source = "Almewty/my-morphe-patches"
-patches-version = "v1.0.0-dev.1"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Almewty"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/pokecardex"
-build-mode = "apk"
-# Packages: com.application.pokecardex, com.example.app
-
-[YouTube-amplerevanced]
-app-name = "YouTube"
-patches-source = "AmpleReVanced/revanced-patches"
-patches-version = "v5.50.2-ample.4"
-rv-brand = "Amplerevanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, ch.protonvpn.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.dcinside.app.android, com.disney.disneyplus, com.drinkplusplus.angulus, com.duolingo, com.ebay.kleinanzeigen, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.kakao.talk, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.letterboxd.letterboxd, com.microblink.photomath, com.microsoft.office.officelens, com.mobilefootie.wc2010, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nothing.smartcenter, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.peacocktv.peacockandroid, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sbs.ondemand.tv, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
-
-[YouTube-anddea-morphed]
-app-name = "YouTube"
-patches-source = "wchill/anddea-rvx-morphed"
-patches-version = "v3.17.0-dev.2"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Anddea-morphed"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage, com.spotify.music, com.ysy.app.firewall
-
-[YouTube-anddea]
-app-name = "YouTube"
-patches-source = "anddea/revanced-patches"
-patches-version = "v4.0.0-dev.8"
-rv-brand = "Anddea"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
-
-[Transit-andronedev]
-app-name = "Transit"
-patches-source = "andronedev/morphe-patches"
-patches-version = "v2.2.0"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Andronedev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/transit-app-inc/transit"
-build-mode = "apk"
-# Packages: com.thetransitapp.droid
-
-[YouTube-areteruhiro]
-app-name = "YouTube"
-patches-source = "areteruhiro/linegms"
-patches-version = "v1"
-rv-brand = "Areteruhiro"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.drinkplusplus.angulus, com.duolingo, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.microblink.photomath, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.naver.line.android, jp.naver.line.androidd, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
-
-[Signal-bawr]
-app-name = "Signal"
-patches-source = "bawr/revanced-patches"
-patches-version = "v1.0.0"
-rv-brand = "Bawr"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/signal-foundation/signal-private-messenger"
-build-mode = "apk"
-# Packages: org.thoughtcrime.securesms
-
-[Speedtest-bholeykabhakt]
-app-name = "Speedtest"
-patches-source = "BholeyKaBhakt/revanced-patches-xtra"
-patches-version = "v1.6.0"
-rv-brand = "Bholeykabhakt"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/ookla/speedtest-by-ookla"
-build-mode = "apk"
-# Packages: com.llamalab.automate, com.ttxapps.autosync, org.zwanoo.android.speedtest
-
-[NovaLauncher-dropped]
-app-name = "NovaLauncher"
-patches-source = "indrastorms/Dropped-Patches"
-patches-version = "v1.5.1"
-rv-brand = "Dropped"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/teslacoil-software/nova-launcher"
-build-mode = "apk"
-# Packages: com.teslacoilsw.launcher, net.dinglisch.android.taskerm, nextapp.fx
-
-[YouTube-experimental]
-app-name = "YouTube"
-patches-source = "Aunali321/ReVancedExperiments"
-patches-version = "v2.0.0-dev.1"
-rv-brand = "Experimental"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: app.revanced.android.youtube, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, org.kustom.lockscreen, org.kustom.wallpaper, org.kustom.widget, org.telegram.messenger, org.telegram.messenger.web, uz.unnarsx.cherrygram
-
-[MemeGen-hoo-dles]
-app-name = "MemeGen"
-patches-source = "hoo-dles/morphe-patches"
-patches-version = "v1.14.1-dev.2"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/zombodroid/meme-generator-free"
-build-mode = "apk"
-# Packages: app.ttmikstories.android, ch.protonvpn.android, cn.ommiao.iconpacker, cn.wps.moffice_eng, com.amazon.avod.thirdpartyclient, com.avocards, com.bambuna.podcastaddict, com.busuu.android.enc, com.duolingo, com.getmimo, com.hellochinese, com.merriamwebster, com.mobilefootie.wc2010, com.myfitnesspal.android, com.pandora.android, com.qbis.guessthecountry, com.sofascore.results, com.wallpaperscraft.wallpaper, com.windyty.android, com.zombodroid.MemeGenerator, ginlemon.flowerfree, jp.ne.ibis.ibispaintx.app, kr.co.yjteam.dailypay, kr.eggbun.eggconvo, me.mycake, net.teuida.teuida, nom.vrd, org.languageapp.lingory, org.totschnig.myexpenses, pl.solidexplorer2
-
-[YouTube-inotia00]
-app-name = "YouTube"
-patches-source = "inotia00/revanced-patches"
-patches-version = "v5.14.1"
-rv-brand = "Inotia00"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
-
-[YouTube-kitadai31]
-app-name = "YouTube"
-patches-source = "kitadai31/revanced-patches-android6-7"
-patches-version = "v5.6.2"
-rv-brand = "Kitadai31"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.dummy.dummyapp1, com.dummy.dummyapp2, com.google.android.youtube
-
-[WarnWetter-lluni]
-app-name = "WarnWetter"
-patches-source = "lluni/custom-revanced-patches"
-patches-version = "v1.0.0"
-rv-brand = "Lluni"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/deutscher-wetterdienst/warnwetter"
-build-mode = "apk"
-# Packages: de.dwd.warnapp
-
-[YouTube-morphe]
-app-name = "YouTube"
-patches-source = "MorpheApp/morphe-patches"
-patches-version = "v1.20.0"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
-
-[YouTube-nk521]
-app-name = "YouTube"
-patches-source = "nk521/revanced-patches"
-patches-version = "v0.0.2"
-rv-brand = "Nk521"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.backdrops.wallpapers, com.bandcamp.android, com.drinkplusplus.angulus, com.duolingo, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.microblink.photomath, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.piccomaeurope.fr, com.postpe.app, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.lite, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.wakdev.apps.nfctools.se, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, io.yuka.android, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
-
-[Reddit-patcheddit]
-app-name = "Reddit"
-patches-source = "wchill/patcheddit"
-patches-version = "v1.2.0"
-rv-brand = "Patcheddit"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.andrewshu.android.reddit, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.reddit.frontpage, com.rubenmayayo.reddit, free.reddit.news, io.syncapps.lemmy_sync, me.edgan.redditslide, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.cygnusx1.continuum, reddit.news
-
-[Twitter-piko]
-app-name = "Twitter"
-patches-source = "crimera/piko"
-patches-version = "v3.0.0"
-rv-brand = "Piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/x"
-build-mode = "apk"
-# Packages: com.twitter.android
-
-[Reddit-privacy]
-app-name = "Reddit"
-patches-source = "jkennethcarino/privacy-revanced-patches"
-patches-version = "v4.6.0"
-rv-brand = "Privacy"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.google.android.inputmethod.latin, com.reddit.frontpage
-
-[YouTube-revanced]
-app-name = "YouTube"
-patches-source = "ReVanced/revanced-patches"
-patches-version = "v6.1.1-dev.1"
-rv-brand = "Revanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, ch.protonvpn.android, com.adobe.lrmobile, com.adobe.photoshopmix, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.disney.disneyplus, com.drinkplusplus.angulus, com.duolingo, com.ebay.kleinanzeigen, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.letterboxd.letterboxd, com.microblink.photomath, com.microsoft.office.officelens, com.mobilefootie.wc2010, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nothing.smartcenter, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.peacocktv.peacockandroid, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sbs.ondemand.tv, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.gmx.mobile.android.mail, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
-
-[YouTube-rex]
-app-name = "YouTube"
-patches-source = "YT-Advanced/ReX-patches"
-patches-version = "v5.1.3"
-rv-brand = "Rex"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
-
-[Amazon-rookieenough]
-app-name = "Amazon"
-patches-source = "RookieEnough/De-ReVanced"
-patches-version = "v1.0.1"
-rv-brand = "Rookieenough"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-shopping"
-build-mode = "apk"
-# Packages: ch.protonmail.android, com.amazon.mShop.android.shopping, com.cricbuzz.android, com.disney.disneyplus, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.letterboxd.letterboxd, com.microblink.photomath, com.microsoft.office.officelens, com.nis.app, com.rarlab.rar, com.soundcloud.android, com.strava, com.tumblr, ginlemon.iconpackstudio, jp.pxv.android
-
-[YouTube-rufusin]
-app-name = "YouTube"
-patches-source = "rufusin/revanced-patches"
-patches-version = "v3.16.0m"
-rv-brand = "Rufusin"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage, com.spotify.music, com.ysy.app.firewall
-
-[YouTube-rvx-morphed]
-app-name = "YouTube"
-patches-source = "wchill/rvx-morphed"
-patches-version = "v5.16.4"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Rvx-morphed"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.apps.youtube.music, com.google.android.youtube
-
-[GPhone-taknok]
-app-name = "GPhone"
-patches-source = "Taknok/revanced-patches"
-patches-version = "v1.1.0"
-rv-brand = "Taknok"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/phone"
-build-mode = "apk"
-# Packages: com.google.android.dialer
-
-[BOCHK-whyvl]
-app-name = "BOCHK"
-patches-source = "whyvl/revanced-patches-repo"
-patches-version = "v1.2.0"
-rv-brand = "Whyvl"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/bochk"
-build-mode = "apk"
-# Packages: com.bochk.app.aos, hk.com.hsbc.hsbchkmobilebanking
-
-[ISYBank-wyse-]
-app-name = "ISYBank"
-patches-source = "Wyse-/revanced-patches"
-patches-version = "v1.2.1"
-rv-brand = "Wyse-"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/intesa-sanpaolo"
-build-mode = "apk"
-# Packages: com.intesasanpaolo.isybank.mobile, com.latuabancaperandroid
-
-[GalaxyWear-xrogers]
-app-name = "GalaxyWear"
-patches-source = "xrogers/revanced-patches-galaxy"
-patches-version = "v1.2.0"
-rv-brand = "Xrogers"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/samsung-electronics-co-ltd/galaxy-wearable-samsung-gear"
-build-mode = "apk"
-# Packages: com.samsung.android.app.watchmanager
 
 ["Digitales Amt-1fexd"]
 app-name = "Digitales Amt"
@@ -456,7 +83,6 @@ patches-version = "v5.50.2-ample.4"
 rv-brand = "Amplerevanced"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, ch.protonvpn.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.dcinside.app.android, com.disney.disneyplus, com.drinkplusplus.angulus, com.duolingo, com.ebay.kleinanzeigen, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.kakao.talk, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.letterboxd.letterboxd, com.microblink.photomath, com.microsoft.office.officelens, com.mobilefootie.wc2010, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nothing.smartcenter, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.peacocktv.peacockandroid, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sbs.ondemand.tv, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
 
@@ -468,7 +94,6 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Anddea-morphed"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage, com.spotify.music, com.ysy.app.firewall
 
@@ -479,7 +104,6 @@ patches-version = "v4.0.0-dev.8"
 rv-brand = "Anddea"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
 
@@ -500,7 +124,6 @@ patches-version = "v1"
 rv-brand = "Areteruhiro"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.drinkplusplus.angulus, com.duolingo, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.microblink.photomath, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.naver.line.android, jp.naver.line.androidd, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
 
@@ -538,7 +161,6 @@ patches-version = "v2.161.5"
 rv-brand = "D4n3436"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.youtube
 
@@ -558,7 +180,6 @@ patches-version = "v2.0.0-dev.1"
 rv-brand = "Experimental"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: app.revanced.android.youtube, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, org.kustom.lockscreen, org.kustom.wallpaper, org.kustom.widget, org.telegram.messenger, org.telegram.messenger.web, uz.unnarsx.cherrygram
 
@@ -579,7 +200,6 @@ patches-version = "v5.14.1"
 rv-brand = "Inotia00"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
 
@@ -590,7 +210,6 @@ patches-version = "v5.6.2"
 rv-brand = "Kitadai31"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.dummy.dummyapp1, com.dummy.dummyapp2, com.google.android.youtube
 
@@ -611,7 +230,6 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
 
@@ -622,7 +240,6 @@ patches-version = "v0.0.2"
 rv-brand = "Nk521"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.backdrops.wallpapers, com.bandcamp.android, com.drinkplusplus.angulus, com.duolingo, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.microblink.photomath, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.piccomaeurope.fr, com.postpe.app, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.lite, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.wakdev.apps.nfctools.se, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, io.yuka.android, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
 
@@ -660,7 +277,6 @@ patches-version = "v6.1.1-dev.1"
 rv-brand = "Revanced"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, ch.protonvpn.android, com.adobe.lrmobile, com.adobe.photoshopmix, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.disney.disneyplus, com.drinkplusplus.angulus, com.duolingo, com.ebay.kleinanzeigen, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.letterboxd.letterboxd, com.microblink.photomath, com.microsoft.office.officelens, com.mobilefootie.wc2010, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nothing.smartcenter, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.peacocktv.peacockandroid, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sbs.ondemand.tv, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.gmx.mobile.android.mail, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
 
@@ -671,7 +287,6 @@ patches-version = "v5.1.3"
 rv-brand = "Rex"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage
 
@@ -691,7 +306,6 @@ patches-version = "v3.16.0m"
 rv-brand = "Rufusin"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube, com.reddit.frontpage, com.spotify.music, com.ysy.app.firewall
 
@@ -703,18 +317,8 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Rvx-morphed"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: com.google.android.apps.youtube.music, com.google.android.youtube
-
-["GPhone-taknok"]
-app-name = "GPhone"
-patches-source = "Taknok/revanced-patches"
-patches-version = "v1.1.0"
-rv-brand = "Taknok"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/phone"
-build-mode = "apk"
-# Packages: com.google.android.dialer
 
 ["Twitter-twitter"]
 app-name = "Twitter"
