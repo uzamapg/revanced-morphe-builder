@@ -111,19 +111,18 @@ get_prebuilts() {
 			local resp asset name
 			resp=$(gh_req "$rv_rel" -) || return 1
 			tag_name=$(jq -r '.tag_name' <<<"$resp")
-			matches=$(jq -e '.assets | map(select(.name | (endswith("asc") or endswith("json")) | not))' <<<"$resp")
+			matches=$(jq -e '.assets | map(select(.name | (endswith("asc") or endswith("json") or endswith("sig")) | not)) | sort_by(.name | (endswith(".rvp") or endswith(".mpp")) | not)' <<<"$resp")
 			if [ "$(jq 'length' <<<"$matches")" -gt 1 ]; then
 				local matches_new
+				# Pick non-dev versions if possible
 				matches_new=$(jq -e -r 'map(select(.name | contains("-dev") | not))' <<<"$matches")
-				if [ "$(jq 'length' <<<"$matches_new")" -eq 1 ]; then
+				if [ "$(jq 'length' <<<"$matches_new")" -ge 1 ]; then
 					matches=$matches_new
 				fi
 			fi
 			if [ "$(jq 'length' <<<"$matches")" -eq 0 ]; then
 				epr "No asset was found"
 				return 1
-			elif [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
-				wpr "More than 1 asset was found for this release. Falling back to the first one found..."
 			fi
 			asset=$(jq -r ".[0]" <<<"$matches")
 			url=$(jq -r .url <<<"$asset")
