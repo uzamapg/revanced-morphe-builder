@@ -439,8 +439,16 @@ get_apkmirror_vers() {
 }
 get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
 get_apkmirror_resp() {
-	__APKMIRROR_RESP__=$(req "${1}" -) || return 1
-	__APKMIRROR_CAT__="${1##*/}"
+	(
+		flock -x 9
+		sleep 3
+		__APKMIRROR_RESP__=$(req "${1}" -) || return 1
+		__APKMIRROR_CAT__="${1##*/}"
+		echo "${__APKMIRROR_RESP__}" > "$TEMP_DIR/apkmirror_last_resp.tmp"
+		echo "${__APKMIRROR_CAT__}" > "$TEMP_DIR/apkmirror_last_cat.tmp"
+	) 9>"$TEMP_DIR/apkmirror.lock" || return 1
+	__APKMIRROR_RESP__=$(cat "$TEMP_DIR/apkmirror_last_resp.tmp")
+	__APKMIRROR_CAT__=$(cat "$TEMP_DIR/apkmirror_last_cat.tmp")
 }
 
 # -------------------- uptodown --------------------
@@ -681,7 +689,7 @@ build_rv() {
 			fi
 		fi
 
-		local stock_apk_to_patch="${stock_apk}.stripped.apk"
+		local stock_apk_to_patch="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${pkg_name}-${version_f}-${arch_f}.stripped.apk"
 		cp -f "$stock_apk" "$stock_apk_to_patch"
 		if [ "$build_mode" = module ]; then
 			zip -d "$stock_apk_to_patch" "lib/*" >/dev/null 2>&1 || :
