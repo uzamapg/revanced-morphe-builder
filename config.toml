@@ -101,44 +101,6 @@ build-mode = "apk"
 # Packages: com.twitter.android
 
 
-[Reddit-arsclib]
-app-name = "Reddit"
-patches-source = "inotia00/revanced-patches-arsclib"
-patches-version = "v2.185.1"
-rv-brand = "Arsclib"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.reddit.frontpage
-
-[Bilibili-biliroamingm]
-app-name = "Bilibili"
-patches-source = "sakarie9/BiliRoamingM"
-patches-version = "v1.23.3.8"
-rv-brand = "Biliroamingm"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/bilibili/bilibili"
-build-mode = "apk"
-# Packages: com.bilibili.app.in, tv.danmaku.bili, tv.danmaku.bilibilihd
-
-[YouTube-d4n3436]
-app-name = "YouTube"
-patches-source = "d4n3436/revanced-patches-android5"
-patches-version = "v2.161.5"
-rv-brand = "D4n3436"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-build-mode = "apk"
-# Packages: com.google.android.youtube
-
-[Twitter-twitter]
-app-name = "Twitter"
-patches-source = "IndusAryan/twitter-patches"
-patches-version = "v1.14.0"
-rv-brand = "Twitter"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/x"
-build-mode = "apk"
-# Packages: com.twitter.android
-
-
 [Digitales Amt-1fexd]
 app-name = "Digitales Amt"
 patches-source = "1fexd/revanced-patches"
@@ -231,15 +193,6 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 build-mode = "apk"
 # Packages: at.gv.bka.serviceportal, at.gv.bmf.bmf2go, at.gv.oe.app, at.willhaben, ch.protonmail.android, com.adobe.lrmobile, com.amazon.avod.thirdpartyclient, com.amazon.mShop.android.shopping, com.andrewshu.android.reddit, com.andrewshu.android.redditdonation, com.bandcamp.android, com.cricbuzz.android, com.crunchyroll.crunchyroid, com.drinkplusplus.angulus, com.duolingo, com.facebook.katana, com.facebook.orca, com.google.android.apps.magazines, com.google.android.apps.photos, com.google.android.apps.recorder, com.google.android.apps.youtube.music, com.google.android.youtube, com.instagram.android, com.instagram.barcelona, com.laurencedawson.reddit_sync, com.laurencedawson.reddit_sync.dev, com.laurencedawson.reddit_sync.pro, com.microblink.photomath, com.myfitnesspal.android, com.myprog.hexedit, com.nis.app, com.nousguide.android.orftvthek, com.onelouder.baconreader, com.onelouder.baconreader.premium, com.pandora.android, com.piccomaeurope.fr, com.rarlab.rar, com.reddit.frontpage, com.rubenmayayo.reddit, com.sec.android.app.fm, com.sony.songpal.mdr, com.soundcloud.android, com.spotify.music, com.ss.android.ugc.trill, com.strava, com.swisssign.swissid.mobile, com.ticktick.task, com.tumblr, com.twitter.android, com.viber.voip, com.xiaomi.wearable, com.zhiliaoapp.musically, com.zombodroid.MemeGenerator, de.dwd.warnapp, de.simon.openinghours, de.stocard.stocard, de.tudortmund.app, eu.faircode.netguard, free.reddit.news, ginlemon.iconpackstudio, io.syncapps.lemmy_sync, it.ipzs.cieid, jp.naver.line.android, jp.naver.line.androidd, jp.pxv.android, me.ccrama.redditslide, ml.docilealligator.infinityforreddit, ml.docilealligator.infinityforreddit.patreon, ml.docilealligator.infinityforreddit.plus, net.binarymode.android.irplus, nl.sanomamedia.android.nu, o.o.joey, o.o.joey.dev, o.o.joey.pro, org.totschnig.myexpenses, pl.solidexplorer2, reddit.news, tv.trakt.trakt, tv.twitch.android.app
 
-[Reddit-arsclib]
-app-name = "Reddit"
-patches-source = "inotia00/revanced-patches-arsclib"
-patches-version = "v2.185.1"
-rv-brand = "Arsclib"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
-build-mode = "apk"
-# Packages: com.reddit.frontpage
-
 [Signal-bawr]
 app-name = "Signal"
 patches-source = "bawr/revanced-patches"
@@ -257,26 +210,6 @@ rv-brand = "Bholeykabhakt"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/ookla/speedtest-by-ookla"
 build-mode = "apk"
 # Packages: com.llamalab.automate, com.ttxapps.autosync, org.zwanoo.android.speedtest
-
-[Bilibili-biliroamingm]
-app-name = "Bilibili"
-patches-source = "sakarie9/BiliRoamingM"
-patches-version = "v1.23.3.8"
-rv-brand = "Biliroamingm"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/bilibili/bilibili-2"
-build-mode = "apk"
-# Packages: com.bilibili.app.in, tv.danmaku.bili, tv.danmaku.bilibilihd
-
-[YouTube-d4n3436]
-app-name = "YouTube"
-patches-source = "d4n3436/revanced-patches-android5"
-patches-version = "v2.161.5"
-rv-brand = "D4n3436"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-build-mode = "apk"
-# Packages: com.google.android.youtube
 
 [NovaLauncher-dropped]
 app-name = "NovaLauncher"
@@ -451,15 +384,6 @@ rv-brand = "Taknok"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/phone"
 build-mode = "apk"
 # Packages: com.google.android.dialer
-
-[Twitter-twitter]
-app-name = "Twitter"
-patches-source = "IndusAryan/twitter-patches"
-patches-version = "v1.14.0"
-rv-brand = "Twitter"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/x"
-build-mode = "apk"
-# Packages: com.twitter.android
 
 [BOCHK-whyvl]
 app-name = "BOCHK"
