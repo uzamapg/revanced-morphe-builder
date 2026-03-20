@@ -72,6 +72,26 @@ get_prebuilts() {
 		[ -d "$dir" ] || mkdir "$dir"
 
 		local rv_rel="https://api.github.com/repos/${src}/releases" name_ver
+		if [[ "$src" == *"patch-bundles/"* ]]; then
+			grab_cl=false
+			local bundle_name="${src##*/}"
+			local bundle_prefix="${bundle_name%-patch-bundles}"
+			if [ "$bundle_name" = "PATCH-LIST-CATALOG.md" ] || [ "$bundle_name" = "bundle-sources.json" ]; then
+				continue
+			fi
+			local bundle_url="https://raw.githubusercontent.com/${src%%/patch-bundles/*}/bundles/patch-bundles/${bundle_name}/${bundle_prefix}-latest-patches-bundle.json"
+			local bundle_json="${dir}/${bundle_prefix}-latest-patches-bundle.json"
+			gh_dl "$bundle_json" "$bundle_url" >&2 || return 1
+			url=$(jq -r '.patches.url' < "$bundle_json")
+			name="${url##*/}"
+			file="${dir}/${name}"
+			gh_dl "$file" "$url" >&2 || return 1
+			[ "$tag" = "Patches" ] && tag_name=$(jq -r '.patches.version' < "$bundle_json" 2>/dev/null || echo "unknown")
+			echo "$tag: ${bundle_prefix}/${name}  " >>"${cl_dir}/changelog.md"
+			echo -n "$file "
+			continue
+		fi
+
 		if [ "$ver" = "dev" ]; then
 			local resp
 			resp=$(gh_req "$rv_rel" -) || return 1
