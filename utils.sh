@@ -303,22 +303,25 @@ get_patch_last_supported_ver() {
 
 patches_list_versions() {
 	local cli_jar=$1 patches_jar=$2 pkg_name=$3 op
-	if ! op=$(java -jar "$cli_jar" list-versions -p "$patches_jar" -f "$pkg_name" -b 2>&1); then
-		if ! op=$(java -jar "$cli_jar" list-versions "$patches_jar" -f "$pkg_name" 2>&1); then
-			epr "Could not list versions $cli_jar: '$op'"
-			return 1
+	if ! op=$(java -jar "$cli_jar" list-versions --patches "$patches_jar" --filter-package-name "$pkg_name" 2>&1); then
+		if ! op=$(java -jar "$cli_jar" list-versions -p "$patches_jar" -f "$pkg_name" -b 2>&1); then
+			if ! op=$(java -jar "$cli_jar" list-versions "$patches_jar" -f "$pkg_name" 2>&1); then
+				epr "Could not list versions $cli_jar: '$op'"
+				return 1
+			fi
 		fi
 	fi
 	echo "$op"
 }
 patches_list() {
 	local cli_jar=$1 patches_jar=$2 pkg_name=$3 op
-	if ! op=$(java -jar "$cli_jar" list-patches -p "$patches_jar" --filter-package-name "$pkg_name" --versions --packages -b 2>&1); then
-		if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" -f "$pkg_name" --with-versions --with-packages 2>&1); then
-			epr "Could not get patches list $cli_jar: '$op'"
-			return 1
+	if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" --filter-package-name "$pkg_name" --versions --packages 2>&1); then
+		if ! op=$(java -jar "$cli_jar" list-patches -p "$patches_jar" --filter-package-name "$pkg_name" --versions --packages -b 2>&1); then
+			if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" -f "$pkg_name" --with-versions --with-packages 2>&1); then
+				epr "Could not get patches list $cli_jar: '$op'"
+				return 1
+			fi
 		fi
-
 	fi
 	echo "$op"
 }
@@ -439,16 +442,30 @@ get_apkmirror_vers() {
 }
 get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
 get_apkmirror_resp() {
-	(
-		flock -x 9
-		sleep 3
-		__APKMIRROR_RESP__=$(req "${1}" -) || return 1
-		__APKMIRROR_CAT__="${1##*/}"
-		echo "${__APKMIRROR_RESP__}" > "$TEMP_DIR/apkmirror_last_resp.tmp"
-		echo "${__APKMIRROR_CAT__}" > "$TEMP_DIR/apkmirror_last_cat.tmp"
-	) 9>"$TEMP_DIR/apkmirror.lock" || return 1
-	__APKMIRROR_RESP__=$(cat "$TEMP_DIR/apkmirror_last_resp.tmp")
-	__APKMIRROR_CAT__=$(cat "$TEMP_DIR/apkmirror_last_cat.tmp")
+	local retry_count=0
+	while [ $retry_count -lt 3 ]; do
+		(
+			flock -x 9
+			# Long random sleep to avoid Cloudflare detection
+			sleep $((15 + RANDOM % 15))
+			__APKMIRROR_RESP__=$(req "${1}" -) || return 1
+			__APKMIRROR_CAT__="${1##*/}"
+			echo "${__APKMIRROR_RESP__}" > "$TEMP_DIR/apkmirror_last_resp.tmp"
+			echo "${__APKMIRROR_CAT__}" > "$TEMP_DIR/apkmirror_last_cat.tmp"
+		) 9>"$TEMP_DIR/apkmirror.lock" || return 1
+		__APKMIRROR_RESP__=$(cat "$TEMP_DIR/apkmirror_last_resp.tmp")
+		__APKMIRROR_CAT__=$(cat "$TEMP_DIR/apkmirror_last_cat.tmp")
+		
+		if grep -q "Just a moment..." <<<"$__APKMIRROR_RESP__" || [ -z "$__APKMIRROR_RESP__" ]; then
+			wpr "APKMirror blocked us (Cloudflare). Retrying in 60 seconds... ($((retry_count + 1))/3)"
+			sleep 60
+			retry_count=$((retry_count + 1))
+		else
+			return 0
+		fi
+	done
+	epr "APKMirror blocked us persistently. Skipping."
+	return 1
 }
 
 # -------------------- uptodown --------------------
